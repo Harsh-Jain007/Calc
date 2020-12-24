@@ -1,0 +1,36 @@
+i = 'y'
+while i=='y' or i=='Y':
+
+  x = int(input("Enter first number: "))
+  print("Enter your choice:\n\t+ for Sum\n\t- for Subtraction\n\t* for Multiplication\n\t^ for Power\n\t! for Root\n\t/ for Division\n\t# for Floor division\n\t% for Remainder" )
+  choice=input(': ')
+  y = int(input("Enter second number: "))
+
+  if choice == '+':
+    ans = x + y
+  elif choice == '-':
+    ans = x - y
+  elif choice == '*':
+    ans = x * y
+  elif choice == '^':
+    ans = x ** y
+  elif choice == '!':
+    ans = x ** (1/y)
+  elif choice == '/':
+    ans = x / y
+  elif choice == '#':
+    ans = x // y
+  elif choice == '%':
+    ans = x % y
+  else:
+    ans = "Wrong input"
+
+  print('Your Answer\t:',ans)
+
+
+
+ 
+  i=input('want to do more: (y/n):')
+  
+  
+  
